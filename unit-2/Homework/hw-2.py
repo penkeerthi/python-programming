@@ -15,6 +15,7 @@ if worker_type == 'full_time': #and worker_type != 'part_time' :
 elif worker_type == 'part_time': #and worker_type != 'contract':
     parttime_weekly_wage = part_timepay * hour
     print(f'Part time workers Weekly wage= {parttime_weekly_wage}')
-elif worker_type == 'contract':
+else worker_type == 'contract':
     contract_weekly_wage = contract_pay * hour
     print(f'Contract workers Weekly wage= {contract_weekly_wage}')
+
