@@ -47,3 +47,21 @@ for vowel in name:
     if vowel == 'a' or vowel =='e' or vowel == 'i' or vowel == 'o' or vowel=='u':
         print(vowel)
 
+
+'''Find the smallest number in a list'''
+my_numbers = [3, 5, 17, 11, 21, 53, -10, -27, 45, 80]
+#tiny_number = 3
+
+tiny_number = my_numbers[0]
+#you are saying in the list select the first number
+
+for number in my_numbers:
+    if number < tiny_numbers:
+        tiny_number = number
+
+print(tiny_number)
+
+#assigning number to the my_numbers
+
+''' for my_numbers in tiny_number:
+      if tiny_number>3 or tiny_number> 5 or tiny_number > 17: '''
