@@ -52,11 +52,11 @@ for vowel in name:
 my_numbers = [3, 5, 17, 11, 21, 53, -10, -27, 45, 80]
 #tiny_number = 3
 
-tiny_number = my_numbers[0]
-#you are saying in the list select the first number
+tiny_number = my_numbers[0] #you are saying in the list select the first number
+
 
 for number in my_numbers:
-    if number < tiny_numbers:
+    if number < tiny_number:
         tiny_number = number
 
 print(tiny_number)

@@ -30,6 +30,7 @@ idx = 0
 while idx < len(names):
     if 'mary' == names[idx]:
         print('found mary')
+        print(idx + 1)
         break
     idx += 1
 

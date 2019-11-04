@@ -9,4 +9,4 @@ elif worker_type =='part_time':
 else:
     weekly_wage = hours_worked * 120 * 0.75
 
-print(weekly_wage)
+print (weekly_wage)
