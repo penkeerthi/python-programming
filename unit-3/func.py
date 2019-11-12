@@ -91,3 +91,4 @@ result = add(50,20) #assign to a variable
 #function takes no arguments 
 # 
 # '''
+#write a function that returns is a paladrome if it is true or not
