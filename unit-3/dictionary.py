@@ -48,6 +48,27 @@ for car in cars:
         count += 1
     print(count)
 
+#how to get the keys in the dictionaries
+#use the keys method
+
+print (car.keys())
+
+#how do we get the values?
+#use the values() method
+
+print(car.values())
+
+
+#to get both keys and values
+#use the items method
+
+print(car.items())
+
+for key, value in car.items():
+    print (key,value)
+
+
+'''
 
 #return the frequency of each letter in the string
 frequency_counter(string)
@@ -61,7 +82,7 @@ frequency_counter('a tasty line of text')'
 
 
 #use a dictionary 
-'''
+
 
 car['make'] = 'Toyota'
 car['model'] = 'Prius'
