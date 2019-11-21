@@ -1,5 +1,3 @@
-import json
-
 #a class us a Template or Blueprint for Object oriented programming
 class Person:
     #every class must have an init method
@@ -64,8 +62,6 @@ class Playlist:
         my_list = [(self.name),(self.tracklists)]
 '''
 
-track_file_name = 'tracks.json'
-
 class Playlist:
     def __init__(self, name):
         self.name = name
@@ -86,34 +82,6 @@ class Playlist:
         
 
         #pass
-    def save_tracks(self):
-
-        #opem file for writing
-        with open(track_file_name, 'w') as track_file:
-            #for track in self.tracks:
-                #track_file.write(json.dumps(track))//adding each track to file
-            track_file.write(json.dumps(self.tracks)) #adding track to a list
-
-
-    '''
-    def load_tracks(self):
-        with open(track_file_name , 'r') as track_file: #load data from the .json file
-            #for track in self.tracks:
-            track_file.read(json.load(track)) #set the tracks variable to the data loaded in playslost
-    '''
-
-    def load_tracks(self):
-        #load the data from the tracks json file
-        with open(track_file_name, 'r') as track_file:
-            data = json.load(track_file)
-        #set the tracks variables to the data in the file
-        self.tracks = data
-
-new_playlist = Playlist('new_music')
-
-new_playlist.load_tracks()
-
-print(new_playlist.tracks)
 
 
 pl = Playlist('tunes')
@@ -121,14 +89,9 @@ pl = Playlist('tunes')
 pl.add_track('Shape of you ','ed', 1.30)
 pl.add_track('Old time road ','Lil Nas', 4.30)
 
-pl.save_tracks()
-#pl.load_tracks()
 print(pl.tracks)
-
-
 
 pl.remove_track('Shape of you')
 
 print(pl.tracks)
-
 
