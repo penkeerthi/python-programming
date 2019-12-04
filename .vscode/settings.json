@@ -1,5 +1,7 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.linting.mypyEnabled": false
+    "python.linting.mypyEnabled": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
 }
