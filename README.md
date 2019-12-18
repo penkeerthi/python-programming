@@ -1,0 +1,3 @@
+# python-programming
+
+This is a repo of my attempt on learning python programming - you will see a lot of commenting out ... 
